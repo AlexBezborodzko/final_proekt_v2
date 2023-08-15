@@ -5,6 +5,10 @@ JOIN "Orders" o ON c.id = o."courierId"
 WHERE o."inDelivery" = true
 GROUP BY c.login;
 
+
+
+
+
 #трекеры заказов и их статусы
 SELECT o.track, 
        CASE 
